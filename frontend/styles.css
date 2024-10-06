@@ -1,0 +1,103 @@
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f0f8ff;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.container {
+background-color: #ffffff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 90%;
+max-width: 600px;
+text-align: center;
+}
+
+h1 {
+color: #333;
+margin-bottom: 20px;
+}
+
+#game-selection button {
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+margin: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#game-selection button:hover {
+background-color: #45a049;
+}
+
+#game {
+margin-top: 20px;
+}
+
+#device-id {
+padding: 10px;
+margin: 10px 0;
+width: 80%;
+max-width: 300px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+#question-container {
+margin: 20px 0;
+}
+
+#question {
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+#answer {
+padding: 10px;
+width: 60%;
+max-width: 200px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+#submit-answer {
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px;
+margin-left: 10px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#submit-answer:hover {
+background-color: #0069d9;
+}
+
+#score-container {
+margin: 20px 0;
+font-size: 1.1em;
+}
+
+#export-results {
+background-color: #ff5722;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#export-results:hover {
+background-color: #e64a19;
+}

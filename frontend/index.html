@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Educational Games for Kids</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #game-selection button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #game-selection button:hover {
+            background-color: #45a049;
+        }
+        #game {
+            margin-top: 20px;
+        }
+        #user-name {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #question-container {
+            margin: 20px 0;
+        }
+        #question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        #answer {
+            padding: 10px;
+            width: 60%;
+            max-width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #submit-answer {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #submit-answer:hover {
+            background-color: #0069d9;
+        }
+        #score-container {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        #export-results {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #export-results:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Educational Games for Kids</h1>
+        <div id="game-selection">
+            <button id="math-game-button">Math Game</button>
+            <button id="general-knowledge-game-button">General Knowledge Game</button>
+        </div>
+        <div id="game">
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" placeholder="Enter Your Name">
+
+            <div id="question-container">
+                <p id="question"></p>
+                <input type="text" id="answer" placeholder="Enter your answer">
+                <button id="submit-answer">Submit Answer</button>
+            </div>
+
+            <div id="score-container">
+                <p>Level: <span id="level">1</span></p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+
+            <button id="export-results">Export Results</button>
+        </div>
+    </div>
+    <script type="module" src="/frontend/main.js"></script>
+</body>
+</html>

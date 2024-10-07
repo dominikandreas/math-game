@@ -24,4 +24,10 @@ Copy the contents of the text file into your favourite AI and follow up with a p
 > 
 > Please use the same format as the one given above, ommitting the files that don't require any changes. You can also add new files if necessary.
 
-Copy the results into a file and run `update_files.py <path to file>` to apply the changes to the code.
+Copy the results into a file and run `update_files.py <path to file>` to apply the changes to the code. 
+
+It is of course also possible to make manual changes. So far this hasn't been necessary.
+
+## Recommendations
+
+I recommend to use either google ai studio with gemini 1.5 pro (latest version) or similar (the aistudio is free to use). Using all files as input, it is important to have a large context length.

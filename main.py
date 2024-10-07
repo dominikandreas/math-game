@@ -35,7 +35,7 @@ class GameResultCreate(BaseModel):
     score: int
 
 # Mount static files for serving frontend
-app.mount("/frontend", StaticFiles(directory="frontend"), name="static")
+app.mount("/frontend", StaticFiles(directory="/"), name="static")
 
 # Serve the main HTML file
 @app.get("/", response_class=HTMLResponse)
